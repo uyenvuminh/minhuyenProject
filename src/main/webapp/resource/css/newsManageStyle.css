@@ -1,0 +1,147 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 2, 2023, 9:14:06 PM
+    Author     : Admin
+*/
+
+.createNews button{
+    background: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #2980b9;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+.createNews button:hover{
+    background: white;
+}
+.createNews a{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.createNews button:hover a{
+    color: #2980b9;
+}
+
+#tableShowNews tbody tr td button{
+    background: #2980b9;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #2980b9;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+#tableShowNews tbody tr td .deleteNews{
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+#tableShowNews tbody tr td button:hover{
+    background: white;
+}
+#tableShowNews tbody tr td button:hover a{
+    color: #2980b9;
+}
+#tableShowNews tbody tr td .deleteNews:hover{
+    color: #e74c3c;
+}
+#tableShowNews tbody tr td a{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+/*FORM UPDATE ACCOUNT ADMIN*/
+#formNews form{
+    /*display: grid;*/
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /*width: 100%;*/
+    border: none;
+    background: #dbdbdb;
+    color: #793333;
+    border-radius: 10px;
+    padding: 30px 50px;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.5);
+}
+@media(max-width: 840px){
+    #formNews form{
+        grid-template-columns: 1fr;
+    }
+}
+#formNews form .input-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#formNews form .input-control label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#formNews form .input-control input{
+    border: 1px solid #3d5b50;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    background: white;
+    transition: 0.25s;
+}
+#formNews form .input-control input:focus{
+    box-shadow: 0px 2px 4px 4px #3d5b50;
+}
+#formNews form button{
+    width: 20%;
+    height: 50%;
+    padding: 15px 20px;
+    background: #762a2a;
+    color: white;
+    border: 1px solid #3d5b50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+#formNews form button:hover{
+    color: #3d5b50;
+    background: white;
+}
+#formNews form .input-control input[type="file"]{
+    height: 36.67px;
+    padding: 0px;
+}
+#formNews form .input-control input::file-selector-button{
+    height: 100%;
+    background: #3d5b50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+#formNews form button{
+    margin-top: 30px;
+}
+/*JS VALIDATE*/
+/* display border green color when success */
+.input-control.success input {
+    border-color: #09c372;
+}
+
+/* display border red color when error */
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+/* display error message */
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.btnAddNews:hover{
+    background-color: #9999ff;
+}
